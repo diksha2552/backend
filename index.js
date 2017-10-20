@@ -15,6 +15,7 @@ var schema = new mongoose.Schema({
 
 var user = mongoose.model('user', schema);
 
+app.use(cypto);
 
 
 app.get('/register', function(req,res){
